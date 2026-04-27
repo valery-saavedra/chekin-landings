@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 204 200" width="204" height="200">
+  <rect width="204" height="200" fill="#F4F4FD"></rect>
+  <rect x="0" y="180" width="204" height="2" fill="#DEDEEB"></rect>
+
+  
+  <g>
+    
+    <path d="M40 66 L102 30 L164 66 Z" fill="#274BF0"></path>
+    
+    <rect x="36" y="66" width="132" height="10" fill="#385BF8"></rect>
+    
+    <rect x="82" y="50" width="40" height="10" fill="#FF2467"></rect>
+    <text x="102" y="58" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-size="7" fill="#FFFFFF" letter-spacing="1.5">HOTEL</text>
+
+    
+    <rect x="36" y="76" width="132" height="104" fill="#FFFFFF" stroke="#DEDEEB"></rect>
+
+    
+    <g fill="#DEDEEB">
+      <rect x="44" y="76" width="10" height="104"></rect>
+      <rect x="70" y="76" width="10" height="104"></rect>
+      <rect x="124" y="76" width="10" height="104"></rect>
+      <rect x="150" y="76" width="10" height="104"></rect>
+    </g>
+    
+    <g fill="#385BF8" opacity=".5">
+      <rect x="42" y="76" width="14" height="4"></rect>
+      <rect x="68" y="76" width="14" height="4"></rect>
+      <rect x="122" y="76" width="14" height="4"></rect>
+      <rect x="148" y="76" width="14" height="4"></rect>
+    </g>
+    
+    <g fill="#385BF8" opacity=".5">
+      <rect x="42" y="170" width="14" height="10"></rect>
+      <rect x="68" y="170" width="14" height="10"></rect>
+      <rect x="122" y="170" width="14" height="10"></rect>
+      <rect x="148" y="170" width="14" height="10"></rect>
+    </g>
+
+    
+    <g>
+      <path d="M56 96 L80 96 L80 138 Q 80 108 68 108 Q 56 108 56 138 Z" fill="#385BF8" opacity=".2"></path>
+      <line x1="68" y1="108" x2="68" y2="138" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"></line>
+      <line x1="56" y1="120" x2="80" y2="120" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"></line>
+    </g>
+    <g>
+      <path d="M124 96 L148 96 L148 138 Q 148 108 136 108 Q 124 108 124 138 Z" fill="#385BF8" opacity=".2"></path>
+      <line x1="136" y1="108" x2="136" y2="138" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"></line>
+      <line x1="124" y1="120" x2="148" y2="120" stroke="#FFFFFF" stroke-width="1.2" opacity=".7"></line>
+    </g>
+
+    
+    
+    <rect x="82" y="166" width="40" height="4" fill="#DEDEEB"></rect>
+    <rect x="78" y="170" width="48" height="4" fill="#DEDEEB"></rect>
+    <rect x="74" y="174" width="56" height="6" fill="#DEDEEB"></rect>
+    
+    <rect x="94" y="166" width="16" height="14" fill="#FF2467"></rect>
+    
+    <path d="M84 166 L84 118 Q 84 96 102 96 Q 120 96 120 118 L120 166 Z" fill="#161643"></path>
+    
+    <line x1="102" y1="96" x2="102" y2="166" stroke="#FFFFFF" stroke-width="1" opacity=".25"></line>
+    
+    <path d="M90 160 L90 120 Q 90 102 102 102 Q 114 102 114 120 L114 160 Z" fill="#FF2467" opacity=".25"></path>
+
+    
+    <g fill="#FF2467">
+      <circle cx="92" cy="86" r="2"></circle>
+      <circle cx="98" cy="86" r="2"></circle>
+      <circle cx="104" cy="86" r="2"></circle>
+      <circle cx="110" cy="86" r="2"></circle>
+      <circle cx="116" cy="86" r="2"></circle>
+    </g>
+  </g>
+
+  
+  <g transform="translate(64 162)">
+    <rect x="0" y="8" width="8" height="10" fill="#FF2467" opacity=".5"></rect>
+    <circle cx="4" cy="6" r="7" fill="#385BF8" opacity=".55"></circle>
+  </g>
+  
+  <g transform="translate(132 162)">
+    <rect x="0" y="8" width="8" height="10" fill="#FF2467" opacity=".5"></rect>
+    <circle cx="4" cy="6" r="7" fill="#385BF8" opacity=".55"></circle>
+  </g>
+
+  </svg>
