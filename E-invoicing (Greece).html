@@ -94,48 +94,46 @@ nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid va
 }
 
 /* ===== HERO ===== */
-.hero{background:linear-gradient(180deg,var(--grad-start),var(--grad-end));color:#fff;padding:72px 0 88px;position:relative;overflow:hidden}
+.hero{background:#fff;color:var(--dark);padding:72px 0 56px;position:relative;overflow:hidden}
 .hero-grid{display:grid;gap:48px;align-items:center;position:relative;z-index:1}
-.hero-pill{display:inline-flex;align-items:center;gap:8px;background:var(--surface-lavender);border:1px solid var(--gray-3);border-radius:51px;padding:4px 16px 4px 4px;font:500 16px/1.5 var(--font-primary);color:var(--navy);box-shadow:var(--shadow-pill);margin-bottom:24px}
+.hero-pill{display:inline-flex;align-items:center;gap:8px;background:var(--surface-lavender);border:1px solid var(--gray-3);border-radius:51px;padding:4px 16px 4px 4px;font:500 14px/1.5 var(--font-primary);color:var(--navy);box-shadow:var(--shadow-pill);margin-bottom:24px}
 .hero-pill .pill-dot{width:28px;height:28px;border-radius:200px;background:#fff;display:grid;place-items:center;box-shadow:var(--shadow-outline)}
 .hero-pill .pill-dot svg{width:14px;height:14px;stroke:var(--main-blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.hero h1{font:700 clamp(36px,5.5vw,70px)/1.15 var(--font-primary);color:#fff;letter-spacing:-.01em;margin-bottom:24px;max-width:640px;text-wrap:balance}
-.hero .lede{font:500 clamp(16px,1.8vw,20px)/1.5 var(--font-primary);color:rgba(255,255,255,.85);max-width:540px;margin-bottom:32px}
-.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:40px}
-.hero-ctas .btn-primary{background:#fff;color:var(--navy);box-shadow:var(--shadow-pill)}
-.hero-ctas .btn-primary:hover{background:linear-gradient(0deg,rgba(0,0,0,.04),rgba(0,0,0,.04)),#fff}
-.hero-proof{display:flex;flex-wrap:wrap;gap:20px;font:500 14px/1.5 var(--font-primary);color:rgba(255,255,255,.7)}
+.hero h1{font:700 clamp(32px,4.2vw,52px)/1.1 var(--font-primary);color:var(--dark);letter-spacing:-.015em;margin-bottom:20px;max-width:560px;text-wrap:balance}
+.hero .lede{font:500 clamp(16px,1.6vw,19px)/1.55 var(--font-primary);color:var(--gray-1);max-width:480px;margin-bottom:32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
+.hero-proof{display:flex;flex-wrap:wrap;gap:20px;font:500 13px/1.5 var(--font-primary);color:var(--gray-2)}
 .hero-proof span{display:flex;align-items:center;gap:6px}
-.hero-proof svg{width:16px;height:16px;stroke:rgba(255,255,255,.7);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.hero-proof svg{width:16px;height:16px;stroke:var(--gray-2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 @media(min-width:1024px){
-  .hero{padding:96px 0 112px}
-  .hero-grid{grid-template-columns:1fr 1.05fr}
+  .hero{padding:80px 0 56px}
+  .hero-grid{grid-template-columns:1.1fr 1fr}
 }
 
 /* Hero Mockup */
-.hero-mock{background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:20px;box-shadow:var(--shadow-large);position:relative}
-.mock-bar{display:flex;align-items:center;gap:8px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.hero-mock{background:#fff;border:1px solid var(--gray-3);border-radius:14px;padding:20px;box-shadow:var(--shadow-large);position:relative}
+.mock-bar{display:flex;align-items:center;gap:8px;margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--gray-3)}
 .mock-dots{display:flex;gap:6px}
-.mock-dots span{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.1)}
+.mock-dots span{width:10px;height:10px;border-radius:50%;background:var(--gray-3)}
 .mock-dots span:first-child{background:#FF5F57}
 .mock-dots span:nth-child(2){background:#FEBC2E}
 .mock-dots span:nth-child(3){background:#28C840}
-.mock-url{margin-left:12px;font:500 11px/1 var(--font-primary);color:var(--gray-2);background:rgba(255,255,255,.06);padding:5px 12px;border-radius:6px;border:1px solid rgba(255,255,255,.08)}
+.mock-url{margin-left:12px;font:500 11px/1 var(--font-primary);color:var(--gray-2);background:var(--surface-input);padding:5px 12px;border-radius:6px;border:1px solid var(--gray-3)}
 .mock-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
-.mock-header h4{font:700 14px/1 var(--font-primary);color:#fff}
-.mock-header .status-pill{font:700 10px/1 var(--font-primary);color:#10B981;background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.2);padding:4px 10px;border-radius:51px;letter-spacing:.04em;text-transform:uppercase}
+.mock-header h4{font:700 14px/1 var(--font-primary);color:var(--navy)}
+.mock-header .status-pill{font:700 10px/1 var(--font-primary);color:#10B981;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.15);padding:4px 10px;border-radius:51px;letter-spacing:.04em;text-transform:uppercase}
 .mock-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
-.mock-kpi{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:12px}
-.mock-kpi .kv{font:800 20px/1 var(--font-primary);color:#fff;letter-spacing:-.02em}
+.mock-kpi{background:var(--surface-input);border:1px solid var(--gray-3);border-radius:8px;padding:12px}
+.mock-kpi .kv{font:800 20px/1 var(--font-primary);color:var(--dark);letter-spacing:-.02em}
 .mock-kpi .kv.green{color:#10B981}
 .mock-kpi .kl{font:600 10px/1 var(--font-primary);color:var(--gray-2);margin-top:4px;text-transform:uppercase;letter-spacing:.06em}
-.mock-table{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:8px;overflow:hidden}
-.mock-th{display:grid;grid-template-columns:1.4fr 1fr .8fr .7fr;gap:8px;padding:10px 14px;font:700 10px/1 var(--font-primary);color:var(--gray-2);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
-.mock-tr{display:grid;grid-template-columns:1.4fr 1fr .8fr .7fr;gap:8px;padding:10px 14px;font:500 12px/1.4 var(--font-primary);color:rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,.04);align-items:center}
+.mock-table{background:#fff;border:1px solid var(--gray-3);border-radius:8px;overflow:hidden}
+.mock-th{display:grid;grid-template-columns:1.4fr 1fr .8fr .7fr;gap:8px;padding:10px 14px;font:700 10px/1 var(--font-primary);color:var(--gray-2);letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--gray-3);background:var(--surface-input)}
+.mock-tr{display:grid;grid-template-columns:1.4fr 1fr .8fr .7fr;gap:8px;padding:10px 14px;font:500 12px/1.4 var(--font-primary);color:var(--gray-1);border-bottom:1px solid var(--gray-3);align-items:center}
 .mock-tr:last-child{border-bottom:none}
-.mock-tr .name{color:#fff;font-weight:600}
-.mock-tr .mark{font:700 10px/1 var(--font-primary);color:#10B981;background:rgba(16,185,129,.12);padding:3px 8px;border-radius:4px;display:inline-block}
-.mock-tr .pending{font:700 10px/1 var(--font-primary);color:#F59E0B;background:rgba(245,158,11,.1);padding:3px 8px;border-radius:4px;display:inline-block}
+.mock-tr .name{color:var(--navy);font-weight:600}
+.mock-tr .mark{font:700 10px/1 var(--font-primary);color:#10B981;background:rgba(16,185,129,.08);padding:3px 8px;border-radius:4px;display:inline-block}
+.mock-tr .pending{font:700 10px/1 var(--font-primary);color:#F59E0B;background:rgba(245,158,11,.08);padding:3px 8px;border-radius:4px;display:inline-block}
 .mock-notif{position:absolute;bottom:-14px;right:-8px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:var(--shadow-card-hover);display:flex;align-items:center;gap:10px;z-index:2;animation:notifPulse 3s ease-in-out infinite}
 @keyframes notifPulse{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 .mock-notif .notif-icon{width:28px;height:28px;background:#10B981;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
@@ -190,7 +188,8 @@ nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid va
 .features{padding:96px 0;background:#fff;border-top:1px solid var(--gray-3)}
 .features .sec-head{text-align:center;margin-bottom:48px}
 .feat-grid{display:grid;gap:20px}
-.feat-card{background:#fff;border:1px solid var(--gray-3);border-radius:14px;padding:28px 24px;box-shadow:var(--shadow-card);transition:box-shadow .2s ease-out}
+.feat-card{background:#fff;border:1px solid var(--gray-3);border-radius:14px;padding:28px 24px;box-shadow:var(--shadow-card);transition:box-shadow .2s ease-out,opacity .5s ease-out,transform .5s ease-out;opacity:0;transform:translateY(20px)}
+.feat-card.visible{opacity:1;transform:translateY(0)}
 .feat-card:hover{box-shadow:var(--shadow-card-hover)}
 .feat-num{font:800 12px/1 var(--font-primary);color:var(--main-blue);background:rgba(56,91,248,.06);border:1px solid rgba(56,91,248,.1);width:32px;height:32px;border-radius:8px;display:grid;place-items:center;margin-bottom:16px;letter-spacing:.02em}
 .feat-card h3{font:700 22px/1.4 var(--font-primary);color:var(--dark);margin-bottom:8px}
@@ -226,18 +225,55 @@ nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid va
 @media(min-width:768px){.why-grid{grid-template-columns:repeat(2,1fr)}}
 
 /* ===== INTEGRATIONS ===== */
-.integrations{padding:96px 0;border-top:1px solid var(--gray-3)}
+.integrations{padding:96px 0;background:linear-gradient(180deg,var(--grad-start),var(--grad-end));color:#fff}
 .integrations .sec-head{text-align:center;margin-bottom:48px}
-.int-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:800px;margin:0 auto 32px}
-.int-tile{background:#fff;border:1px solid var(--gray-3);border-radius:8px;padding:16px 20px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-card);transition:box-shadow .2s ease-out;min-height:64px}
-.int-tile:hover{box-shadow:var(--shadow-card-hover)}
-.int-tile img{max-height:32px;max-width:100%;object-fit:contain;filter:grayscale(1);opacity:.7;transition:all .2s ease-out}
-.int-tile:hover img{filter:grayscale(0);opacity:1}
-.int-cta{font:600 16px/1 var(--font-primary);color:var(--main-blue);display:inline-flex;align-items:center;gap:8px;transition:color .15s}
-.int-cta:hover{color:var(--hover-blue)}
+.integrations .eyebrow{color:rgba(255,255,255,.7)}
+.integrations .sec-h2{color:#fff}
+.integrations .sec-h2 b{color:#fff}
+.integrations .sec-head p{color:rgba(255,255,255,.75) !important}
+.int-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:720px;margin:0 auto 32px}
+.int-tile{background:rgba(255,255,255,.95);border:none;border-radius:12px;padding:20px 24px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-large);transition:box-shadow .2s ease-out;min-height:72px}
+.int-tile:hover{box-shadow:0 20px 40px rgba(0,0,0,.2)}
+.int-tile img{max-height:40px;max-width:100%;object-fit:contain;transition:all .2s ease-out}
+.int-cta{font:600 16px/1 var(--font-primary);color:#fff;display:inline-flex;align-items:center;gap:8px;transition:opacity .15s}
+.int-cta:hover{opacity:.8}
 .int-cta svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@media(min-width:640px){.int-grid{grid-template-columns:repeat(3,1fr)}}
-@media(min-width:900px){.int-grid{grid-template-columns:repeat(5,1fr)}}
+@media(min-width:640px){.int-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* ===== FOR PLATFORMS ===== */
+.platforms{background:var(--dark);color:#fff;padding:96px 0;position:relative;overflow:hidden}
+.platforms::before{content:"";position:absolute;top:-80px;right:-120px;width:500px;height:500px;background:radial-gradient(circle,rgba(56,91,248,.1),transparent 65%);pointer-events:none}
+.plat-grid{display:grid;gap:48px;align-items:center;position:relative;z-index:1}
+.platforms .eyebrow{color:var(--hover-blue)}
+.platforms h2{font:400 clamp(28px,3.5vw,44px)/1.08 var(--font-primary);color:#fff;margin-bottom:16px}
+.platforms h2 b{font-weight:700}
+.platforms .body{font:500 17px/1.55 var(--font-primary);color:var(--gray-2);margin-bottom:32px}
+.plat-features{display:flex;flex-direction:column;gap:12px}
+.plat-feat{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:16px 18px}
+.plat-feat .pf-icon{width:34px;height:34px;border-radius:8px;background:rgba(56,91,248,.15);display:grid;place-items:center;flex-shrink:0}
+.plat-feat .pf-icon svg{width:17px;height:17px;stroke:var(--hover-blue);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.plat-feat p{font:500 14px/1.5 var(--font-primary);color:rgba(255,255,255,.8);margin:0}
+@media(min-width:1024px){.plat-grid{grid-template-columns:1fr 1.1fr}}
+
+/* SDK Mockup */
+.sdk-mock{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px;position:relative}
+.sdk-mock-bar{display:flex;align-items:center;gap:8px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.06)}
+.sdk-mock-bar .dots{display:flex;gap:5px}
+.sdk-mock-bar .dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.1)}
+.sdk-mock-bar .dots span:first-child{background:#FF5F57}
+.sdk-mock-bar .dots span:nth-child(2){background:#FEBC2E}
+.sdk-mock-bar .dots span:nth-child(3){background:#28C840}
+.sdk-mock-bar .tab{margin-left:12px;font:500 11px/1 var(--font-primary);color:var(--gray-2);background:rgba(255,255,255,.06);padding:5px 12px;border-radius:6px}
+.sdk-code{background:rgba(0,0,0,.3);border-radius:8px;padding:16px;font:500 12px/1.7 'Courier New',monospace;color:rgba(255,255,255,.6);overflow:hidden}
+.sdk-code .kw{color:var(--hover-blue)}
+.sdk-code .str{color:#10B981}
+.sdk-code .cm{color:rgba(255,255,255,.25);font-style:italic}
+.sdk-code .fn{color:#F59E0B}
+.sdk-result{margin-top:12px;background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.12);border-radius:8px;padding:12px 14px;display:flex;align-items:center;gap:10px}
+.sdk-result .res-icon{width:24px;height:24px;background:#10B981;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+.sdk-result .res-icon svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.sdk-result .res-text{font:600 11px/1.4 var(--font-primary);color:#10B981}
+.sdk-result .res-text span{display:block;font:500 10px/1.3 var(--font-primary);color:rgba(255,255,255,.4)}
 
 /* ===== FINAL CTA ===== */
 .final-cta{background:linear-gradient(180deg,var(--grad-start),var(--grad-end));color:#fff;padding:96px 0;position:relative;overflow:hidden}
@@ -269,7 +305,7 @@ footer{background:var(--dark);color:var(--gray-1);padding:64px 0 32px}
 /* ===== RESPONSIVE ===== */
 @media(max-width:899px){.nav-actions .btn-demo{display:none}}
 @media(max-width:767px){
-  .hero{padding:48px 0 56px}
+  .hero{padding:40px 0 32px}
   .hero-grid{gap:32px}
   .problems{padding:56px 0}
   .solution,.features,.why,.integrations{padding:64px 0}
@@ -307,11 +343,11 @@ footer{background:var(--dark);color:var(--gray-1);padding:64px 0 32px}
         <span class="pill-dot"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/></svg></span>
         E-Invoicing &middot; Greece
       </div>
-      <h1>Stop doing taxes manually. Let&nbsp;Chekin handle MyData for&nbsp;you.</h1>
+      <h1>Your invoices, submitted to MyData. Automatically.</h1>
       <p class="lede">Chekin connects directly to Greece's tax authority (AADE&nbsp;MyData) to generate, calculate, and submit your invoices and receipts automatically&mdash;from your PMS, in real&nbsp;time.</p>
       <div class="hero-ctas">
-        <a href="#" class="btn btn-primary" style="background:#fff;color:var(--navy);box-shadow:var(--shadow-pill)">Get started free <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a>
-        <a href="#" class="btn btn-tertiary">Book a demo</a>
+        <a href="#" class="btn btn-primary">Get started free <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a>
+        <a href="#" class="btn btn-secondary">Book a demo</a>
       </div>
       <div class="hero-proof">
         <span><svg viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg>Trusted by property managers across Greece</span>
@@ -351,17 +387,17 @@ footer{background:var(--dark);color:var(--gray-1);padding:64px 0 32px}
 <!-- ===== PROBLEM STRIP ===== -->
 <section class="problems">
   <div class="wrap">
-    <div class="section-label">The manual way is broken</div>
+    <div class="section-label">Without certified software, the work falls on you</div>
     <div class="prob-grid">
       <div class="prob-card">
         <div class="prob-num">01</div>
-        <h3>Two platforms, every booking</h3>
-        <p>Log in to government portals, cross-check your PMS, re-enter every reservation manually.</p>
+        <h3>Daily MyData submissions, done by hand</h3>
+        <p>MyData needs a submission for every reservation. That means logging in, re-entering data, and reconciling with your PMS&mdash;every single day.</p>
       </div>
       <div class="prob-card">
         <div class="prob-num">02</div>
         <h3>Math you shouldn't be doing</h3>
-        <p>Calculate VAT, environmental fee, city tax&mdash;by hand, per guest, with no room for error.</p>
+        <p>VAT, accommodation tax, environmental levy&mdash;calculated by hand, per guest, with no margin for error.</p>
       </div>
       <div class="prob-card">
         <div class="prob-num">03</div>
@@ -406,12 +442,30 @@ footer{background:var(--dark);color:var(--gray-1);padding:64px 0 32px}
   </div>
 </section>
 
+<!-- ===== INTEGRATIONS ===== -->
+<section class="integrations">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Integrations</div>
+      <h2 class="sec-h2">Works with the PMS <b>you already&nbsp;use.</b></h2>
+      <p style="font:500 17px/1.55 var(--font-primary);color:var(--gray-1);margin:8px auto 0;text-align:center;max-width:560px">Chekin connects to your property management system&mdash;so guest data flows straight into MyData, with no manual re-entry.</p>
+    </div>
+    <div class="int-grid">
+      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2023/10/Guesty_2.0_Logo_Dark@2x.svg" alt="Guesty" loading="lazy"></div>
+      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/06/Image-23.png" alt="Lodgify" loading="lazy"></div>
+      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2024/05/oracle-hospitality.png" alt="Opera Cloud" loading="lazy" style="max-height:60px;max-width:130px"></div>
+      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2025/10/eviivo-logo-colour.png" alt="eviivo" loading="lazy"></div>
+    </div>
+    <div style="text-align:center"><a href="#" class="int-cta">Explore our integrations <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></div>
+  </div>
+</section>
+
 <!-- ===== FEATURES ===== -->
 <section class="features">
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">The full workflow</div>
-      <h2 class="sec-h2">Four steps. <b>Zero manual&nbsp;work.</b></h2>
+      <h2 class="sec-h2">Four steps. <b>Zero&nbsp;friction.</b></h2>
     </div>
     <div class="feat-grid">
       <div class="feat-card"><div class="feat-num">01</div><h3>Capture</h3><p>Guest info, dates, payment, and tax details pulled directly from your PMS. Custom fields like environmental fee are supported out of the box.</p></div>
@@ -454,27 +508,58 @@ footer{background:var(--dark);color:var(--gray-1);padding:64px 0 32px}
   </div>
 </section>
 
-<!-- ===== INTEGRATIONS ===== -->
-<section class="integrations">
+<!-- ===== FOR PLATFORMS ===== -->
+<section class="platforms">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Integrations</div>
-      <h2 class="sec-h2">Connected to <b>50+ PMS&nbsp;platforms.</b></h2>
-      <p style="font:500 18px/1.5 var(--font-primary);color:var(--gray-1);margin:8px auto 0;text-align:center;max-width:480px">Chekin integrates with the top property management systems on the market.</p>
+    <div class="plat-grid">
+      <div>
+        <div class="eyebrow">For hospitality platforms</div>
+        <h2>Add Greek e-invoicing to your platform&mdash;<b>without building&nbsp;it.</b></h2>
+        <p class="body">If you run a PMS, channel manager, or hospitality platform, you can embed Chekin's MyData compliance engine directly into your product as a white-label module. Your brand, your dashboard, your&nbsp;rules.</p>
+        <div class="plat-features">
+          <div class="plat-feat">
+            <div class="pf-icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+            <p>One API integration&mdash;connects to your existing reservation flow and handles MyData submissions automatically.</p>
+          </div>
+          <div class="plat-feat">
+            <div class="pf-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg></div>
+            <p>Plug in, don't build&mdash;one integration replaces months of internal development.</p>
+          </div>
+          <div class="plat-feat">
+            <div class="pf-icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5.5 3.6 10.2 8 11 4.4-.8 8-5.5 8-11V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <p>We maintain the regulatory layer&mdash;format changes, requirement updates, new obligations. All handled on our&nbsp;end.</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-tertiary" style="margin-top:24px">Talk to our SDK team <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a>
+      </div>
+      <div class="sdk-mock">
+        <div class="sdk-mock-bar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="tab">your-platform.com/api</div>
+        </div>
+        <div class="sdk-code">
+<span class="cm">// Submit invoice to MyData via Chekin SDK</span>
+<span class="kw">const</span> response = <span class="kw">await</span> chekin.<span class="fn">invoice</span>({
+  reservation_id: <span class="str">"RES-2024-1847"</span>,
+  guest: {
+    name: <span class="str">"A. Papadopoulos"</span>,
+    vat_id: <span class="str">"EL012345678"</span>
+  },
+  amount: <span class="str">420.00</span>,
+  taxes: {
+    vat: <span class="str">24</span>,
+    env_levy: <span class="str">1.50</span>,
+    city_tax: <span class="str">4.00</span>
+  },
+  type: <span class="str">"receipt"</span>
+});
+        </div>
+        <div class="sdk-result">
+          <div class="res-icon"><svg viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></svg></div>
+          <div class="res-text">MARK #4820194 confirmed<span>200 OK &middot; mydata.aade.gr &middot; 340ms</span></div>
+        </div>
+      </div>
     </div>
-    <div class="int-grid">
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2023/10/Guesty_2.0_Logo_Dark@2x.svg" alt="Guesty" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/06/Image-23.png" alt="Lodgify" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2025/07/Smoobu_logo_blue_h-300x74.webp" alt="Smoobu" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/06/Group-12916.svg" alt="Cloudbeds" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/06/Image-21.png" alt="Hostaway" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/01/Hostify-Logo@2x.png" alt="Hostify" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/06/beds24_logo_colored.png" alt="Beds24" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2021/06/logo_positive.svg" alt="Rentals United" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2023/04/avantio-orange.png" alt="Avantio" loading="lazy"></div>
-      <div class="int-tile"><img src="https://chekin.com/wp-content/uploads/2022/01/OCTORATE-logo-new-300x72.png" alt="Octorate" loading="lazy"></div>
-    </div>
-    <div style="text-align:center"><a href="#" class="int-cta">Explore our integrations <svg viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></a></div>
   </div>
 </section>
 
@@ -518,5 +603,19 @@ footer{background:var(--dark);color:var(--gray-1);padding:64px 0 32px}
   </div>
 </footer>
 
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.feat-card').forEach((card, i) => {
+  card.style.transitionDelay = (i * 150) + 'ms';
+  observer.observe(card);
+});
+</script>
 </body>
 </html>
